@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>About Index</h1>
+<hr />
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <h1>Data from controller</h1>
+            <ul class="list-group">
+                <li class="list-group-item text-left">Data with Viewbag - <b>@ViewBag.Name</b></li>
+                <li class="list-group-item text-left">Data with ViewData - <b>@ViewData["Surname"]</b></li>
+                <li class="list-group-item text-left">Data with TemtData - <b>@TempData.Peek("Address")</b></li>
+            </ul>
+        </div>
+    </div>
+</div>

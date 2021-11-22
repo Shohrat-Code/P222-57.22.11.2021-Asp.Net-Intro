@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <hr />
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1>Data from controller</h1>
+                <ul class="list-group">
+                    <li class="list-group-item text-left">Data with Viewbag - <b>@ViewBag.Name</b></li>
+                    <li class="list-group-item text-left">Data with ViewData - <b>@ViewData["Surname"]</b></li>
+                    <li class="list-group-item text-left">Data with TemtData - <b>@TempData.Peek("Address")</b></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</div>
